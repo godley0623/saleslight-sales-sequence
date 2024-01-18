@@ -1,0 +1,69 @@
+#view_login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/signin_page/background.svg");
+    background-size: cover;
+    width: inherit;
+    height: 100vh;
+}
+
+#view_login img {
+    margin-bottom: 0.5rem;
+    border-radius: 3rem;
+    width: 200px;
+}
+
+#view_login h1 {
+    color: #41416e;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+#view_login h3 {
+    color: #41416e;
+}
+
+#view_login h3 #link_signup {
+    font-weight: 700;
+}
+
+#view_login form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+}
+
+#view_login form p {
+    color: #41416e;
+    font-size: 0.75rem;
+    font-style: italic;
+}
+
+#view_login form #btn_login {
+    width: 100%;
+    /* margin: 0.5rem 0;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    padding: 0.5rem;
+    background-color: #0164c7; */
+}
+
+#view_login #login_message {
+    visibility: hidden;
+    color: ivory;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#view_login #link_forgot_pass {
+    cursor: pointer;
+}
+
+#view_login #link_forgot_pass:hover {
+    text-decoration: underline;
+}
