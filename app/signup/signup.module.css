@@ -1,64 +1,61 @@
-#view_login {
+#view_signup {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     background-image: url("../images/signin_page/background.svg");
     background-size: cover;
     width: inherit;
     height: 100vh;
 }
 
-#view_login img {
+#view_signup img {
     margin-bottom: 0.5rem;
-    border-radius: 3rem;
+    border-radius: 1rem;
     width: 200px;
 }
-
-#view_login h1 {
+#view_signup h1 {
     color: #41416e;
     font-weight: 700;
     font-size: 1.5rem;
 }
-
-#view_login h3 {
+#view_signup h3 {
     color: #41416e;
+    font-size: 1.5rem;
 }
-
-#view_login h3 #link_signup {
+#view_signup h3 #link_login,
+#view_signup h3 #link_signup {
     font-weight: 700;
 }
-
-#view_login form {
+#view_signup form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 50%;
 }
-
-#view_login form p {
+#view_signup form input {
+    margin: 0.5rem 0;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+#view_signup form p {
     color: #41416e;
     font-size: 0.75rem;
     font-style: italic;
 }
-
-#view_login form #btn_login {
+#view_signup form #btn_signup {
+    margin: 0.5rem 0;
     width: 100%;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    padding: 0.5rem;
+    background-color: #0164c7;
 }
-
-#view_login #login_message {
+#view_signup #signup_message {
     visibility: hidden;
     color: ivory;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-}
-
-#view_login #link_forgot_pass {
-    cursor: pointer;
-}
-
-#view_login #link_forgot_pass:hover {
-    text-decoration: underline;
 }
