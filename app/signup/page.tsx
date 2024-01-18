@@ -13,45 +13,57 @@ export default function signUp() {
             />
             <h3>SIGN UP</h3>
             <form id="form_signup">
-                <input
-                    id="input_fullname"
-                    className="form-control h-8"
-                    type="name"
-                    placeholder="Full Name"
-                    required
-                />
-                <input
-                    id="input_email"
-                    className="form-control h-8"
-                    type="email"
-                    placeholder="Email"
-                    required
-                />
-                <input
-                    id="input_password"
-                    className="form-control h-8"
-                    type="password"
-                    placeholder="Password"
-                    required
-                />
-                <input
-                    id="input_confirmpassword"
-                    className="form-control h-8"
-                    type="password"
-                    placeholder="Confirm Password"
-                    required
-                />
+                <div className='w-full flex justify-center'>
+                    <input
+                        id="input_fullname"
+                        className="form-control pl-2 w-3/4 h-8"
+                        type="name"
+                        placeholder="Full Name"
+                        required
+                    />
+                </div>
+                <div className='w-full flex justify-center'>
+                    <input
+                        id="input_email"
+                        className="form-control pl-2 w-3/4 h-8"
+                        type="email"
+                        placeholder="Email"
+                        required
+                    />
+                </div>
+                <div className='w-full flex justify-center'>
+                    <input
+                        id="input_password"
+                        className="form-control pl-2 w-3/4 h-8"
+                        type="password"
+                        placeholder="Password"
+                        required
+                    />
+                </div>
+                <div className='w-full flex justify-center'>
+                    <input
+                        id="input_confirmpassword"
+                        className="form-control pl-2 w-3/4 h-8"
+                        type="password"
+                        placeholder="Confirm Password"
+                        required
+                    />
+                </div>
                 <div className="w-full flex justify-center gap-4 mt-4 mb-4">
                     <div className="align-middle">
                         <input
                             id="input_tocCheck"
+                            className="w-4 h-4"
                             type="checkbox"
                             name="toc"
                             required
                         />
                     </div>
                     <div className="flex items-center">
-                        By signing up, you agree to our&nbsp;"<a href="https://saleslights.com/privacy-policy" className="text-primary underline">Terms and Conditions</a>"
+                        By signing up, you agree to our&nbsp;"<a
+                        href="https://saleslights.com/privacy-policy"
+                        className="text-primary underline"
+                        target="_blank">Terms and Conditions</a>"
                     </div>
                 </div>
 

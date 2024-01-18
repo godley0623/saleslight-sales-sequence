@@ -17,7 +17,7 @@ export default function signIn() {
                 <div className="w-full h-10 mb-3 flex justify-center">
                     <input
                         id="input_login_email"
-                        className="form-control form-control w-3/4 h-full rounded-md"
+                        className="form-control pl-2 w-3/4 h-full rounded-md"
                         type="email"
                         placeholder="Email"
                         required />
@@ -25,7 +25,7 @@ export default function signIn() {
                 <div className="w-full h-10 mb-3 flex justify-center">
                     <input
                         id="input_login_pass"
-                        className="form-control form-control w-3/4 h-full rounded-md"
+                        className="form-control pl-2 w-3/4 h-full rounded-md"
                         type="password"
                         placeholder="Password"
                         required />
