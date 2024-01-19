@@ -1,9 +1,17 @@
+"use client"
 import React from 'react';
+import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import styles from './signup.module.css';
 import logo from '../images/saleslights_logo/saleslights-logo04.svg';
 
 export default function signUp() {
+    const router = useRouter()
+
+    const goToSignInPage = () => {
+        router.push("/signin")
+    }
+    
     return (
         <div id={styles.view_signup}>
             <Image
@@ -83,7 +91,8 @@ export default function signUp() {
                     <button
                         id="link_login"
                         className="bg-success text-white w-1/2 h-10 rounded-md"
-                        type="submit">
+                        type="submit"
+                        onClick={goToSignInPage}>
                         Login Here
                     </button>
                 </div>
