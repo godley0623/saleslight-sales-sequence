@@ -37,18 +37,26 @@ export const getAuthToken = async (email: string, password: string) => {
 }
 
 export const jwtAuthCheck = async (token: string) => {
-    const options = {
+    try {
+      const options = {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
           "authorization": `Bearer ${token}`
         }
-    }
-    
-    fetch(`${server}/api/authenticateUser`, options)
-      .then(res => res.json())
-      .then(data => console.log(data))
-      .catch(error => console.error('Error:', error))
+      };
+  
+      const response = await fetch(`${server}/api/authenticateUser`, options);
+  
+      if (!response.ok) {
+        throw new Error(`Error: ${response.status}`);
+      }
+  
+      const data = await response.json();
+      return true;
 
-    return true
-}
+    } catch (error) {
+      console.error(error);
+      return false;
+    }
+};

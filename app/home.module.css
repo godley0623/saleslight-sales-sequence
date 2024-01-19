@@ -1,0 +1,4 @@
+#loading_screen {
+    background-image: url("./images/signin_page/background.svg");
+    background-size: cover;
+}
