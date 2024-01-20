@@ -5,7 +5,7 @@ import Image from 'next/image';
 import styles from './signup.module.css';
 import logo from '../images/saleslights_logo/saleslights-logo04.svg';
 
-export default function signUp() {
+export default function SignUp() {
     const router = useRouter()
 
     const goToSignInPage = () => {

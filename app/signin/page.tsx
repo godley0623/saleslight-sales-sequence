@@ -7,7 +7,7 @@ import styles from './signin.module.css';
 import logo from '../images/saleslights_logo/saleslights-logo04.svg';
 import { getAuthToken, jwtAuthCheck } from '../controller/server'
 
-export default function signIn() {
+export default function SignIn() {
     const router = useRouter()
 
     const [email, setEmail] = useState('')
