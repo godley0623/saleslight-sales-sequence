@@ -32,7 +32,7 @@ export default function Home() {
     };
 
     verifyToken()
-  }, []);
+  }, [router]);
 
   const handleLogout = () => {
     localStorage.removeItem('token')

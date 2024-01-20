@@ -68,7 +68,7 @@ export default function SignUp() {
                         />
                     </div>
                     <div className="flex items-center">
-                        By signing up, you agree to our&nbsp;"<a
+                        By signing up, you agree to our "<a
                         href="https://saleslights.com/privacy-policy"
                         className="text-primary underline"
                         target="_blank">Terms and Conditions</a>"
