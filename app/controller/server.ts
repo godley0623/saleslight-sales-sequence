@@ -60,3 +60,33 @@ export const jwtAuthCheck = async (token: string) => {
       return false;
     }
 };
+
+export const getSalesPrompts = async (token:string, email:string) => {
+  try{
+    const emailData = {
+      email: email,
+    };
+    
+    const options = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "authorization": `Bearer ${token}`
+      },
+      body: JSON.stringify(emailData),
+    };
+
+    const response = await fetch(`${server}/api/prompts/getSP`, options);
+    
+    if (!response.ok) {
+      throw new Error(`Error: ${response.status}`);
+    }
+
+    const data = await response.json();
+    return data;
+    
+  } catch (error) {
+    console.error(error)
+    return false
+  }
+}
