@@ -11,7 +11,7 @@ export default function SignUp() {
     const goToSignInPage = () => {
         router.push("/signin")
     }
-    
+
     return (
         <div id={styles.view_signup}>
             <Image
@@ -69,9 +69,9 @@ export default function SignUp() {
                     </div>
                     <div className="flex items-center">
                         By signing up, you agree to our "<a
-                        href="https://saleslights.com/privacy-policy"
-                        className="text-primary underline"
-                        target="_blank">Terms and Conditions</a>"
+                            href="https://saleslights.com/privacy-policy"
+                            className="text-primary underline"
+                            target="_blank">Terms and Conditions</a>"
                     </div>
                 </div>
 
